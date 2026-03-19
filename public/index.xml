@@ -920,10 +920,10 @@ The content you see here comes from the contents of the &lt;code&gt;content/proj
  &lt;div class="showcase-section row flex-column-reverse flex-md-row rad-fade-down rad-waiting rad-animate"&gt;
  &lt;div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"&gt;
  &lt;h1 class="display-1"&gt;
- Showcase section
+ Showcase
  &lt;/h1&gt;
  &lt;h2 class="display-5"&gt;
- &lt;span&gt;Subtitle - coming from &lt;code&gt;home.md&lt;/code&gt;&lt;/span&gt;
+ &lt;span&gt;&lt;a href='https://github.com/zetxek/adritian-demo/blob/main/content/home/home.md?plain=1'&gt;&lt;code&gt;home.md&lt;/code&gt;&lt;/a&gt;&lt;/span&gt;
  &lt;/h2&gt;
  &lt;div class="lead"&gt;
  &lt;strong&gt;Strong&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt; and normal text. This comes from &lt;a href='https://github.com/zetxek/adritian-demo/blob/main/content/home/home.md?plain=1'&gt;&lt;code&gt;home.md&lt;/code&gt;&lt;/a&gt;, using the &lt;code&gt;showcase-section&lt;/code&gt; &lt;a href=''&gt;shortcode&lt;/a&gt;.&lt;br/&gt;Below you can see the social links, provided by the &lt;code&gt;platform-links&lt;/code&gt; shortcode.
@@ -1256,13 +1256,8 @@ The content you see here comes from the contents of the &lt;code&gt;content/proj
  &lt;div class="col-12 col-md-6 my-auto"&gt;
  &lt;h2&gt;About me&lt;/h2&gt;
  &lt;div class="about-me content"&gt;
- This content is using the &lt;code&gt;about-section&lt;/code&gt; shortcode. &lt;br/&gt;You can write &lt;code&gt;HTML&lt;/code&gt;, as long as you &lt;em&gt;wrap it&lt;/em&gt; accordingly. 
+ Tom Wiley Cotton is ...
  &lt;/div&gt;
- 
- &lt;a href="http://localhost:1313/skills" target="_blank" class="btn btn-primary mt-3"&gt;
- &lt;i class="icon-user"&gt;&lt;/i&gt;
- Check my skills
- &lt;/a&gt;
  
  &lt;/div&gt;
  &lt;/div&gt;

@@ -6,8 +6,8 @@ draft = false
 
 
 {{< showcase-section
-    title="Showcase section"
-    subtitle="Subtitle - coming from <code>home.md</code>"
+    title="Showcase"
+    subtitle="<a href='https://github.com/zetxek/adritian-demo/blob/main/content/home/home.md?plain=1'><code>home.md</code></a>"
     buttonText="Email"
     description="<strong>Strong</strong>, <em>italic</em> and normal text. This comes from <a href='https://github.com/zetxek/adritian-demo/blob/main/content/home/home.md?plain=1'><code>home.md</code></a>, using the <code>showcase-section</code> <a href=''>shortcode</a>.<br/>Below you can see the social links, provided by the <code>platform-links</code> shortcode."
     imgSrc="images/showcase/showcase.png"
@@ -41,10 +41,7 @@ draft = false
 
 {{< about-section
     title="About me"
-    content="This content is using the <code>about-section</code> shortcode. <br/>You can write <code>HTML</code>, as long as you <em>wrap it</em> accordingly. "
-    button_icon="icon-user"
-    button_text="Check my skills"
-    button_url="/skills"
+    content="Tom Wiley Cotton is ..."
     imgSrc="images/about/user-picture.png"
     imgScale="0.5"
     text_align="center"
