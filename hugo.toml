@@ -238,12 +238,12 @@ weight = 5
 
 # CSS Plugins
 [[params.plugins.css]]
-URL = "css/custom.css"
-[[params.plugins.css]]
 URL = "css/adritian-icons.css"
 ## Print css
 [[params.plugins.css]]
 URL = "css/bootstrap-print.css"
+[[params.plugins.css]]
+URL = "css/custom.css"
 
 # JS Plugins
 [[params.plugins.js]]

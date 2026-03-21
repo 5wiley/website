@@ -1,0 +1,20 @@
+@media (min-width: 992px) {
+    .section {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    html body.home main#main-content section#showcase.rad-showcase {
+        min-height: 100px !important;
+        /* padding-bottom and padding-top are now handled by the .section override */
+    }
+    html body.home main#main-content section#showcase.rad-showcase + section#about.section {
+        margin-top: -20000px !important;
+        /* padding-top is now handled by the .section override */
+    }
+    .platform-links {
+        margin-top: 0px !important;
+    }
+}

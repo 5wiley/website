@@ -75,7 +75,7 @@
 
 ## Homepage head title
 - id: "head_title"
-  translation: "Site de démonstration pour Adritian - un thème Hugo haute performance par Adrián Moreno"
+  translation: "Portfolio - Tom Wiley Cotton"
 
 - id: "head_description"
   translation: "Ce thème Hugo (Adritian) est basé sur Bootstrap et possède des fonctionnalités qui le rendent adapté pour un site personnel, un portfolio ou d'autres types d'applications monopages."
