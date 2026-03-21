@@ -47,13 +47,13 @@ draft = false
     text_align="center"
  >}}
 
-{{% comment %}}
+<!--
 {{< education-list
     title="Formal Education (education-list)" >}}
-{{% /comment %}}
+-->
 
 
-{{% comment %}}
+<!--
 {{< experience-section
     title="My job experience (title)"
     intro_title="Intro (intro_title)"
@@ -65,22 +65,23 @@ draft = false
     button2_url="/skills"
     hideViewAll="false"
 >}}
-{{% /comment %}}
+-->
 
-{{% comment %}}
+<!--
 {{< experience-list
     title="Experience (as list)"
     padding="false" >}}
 }}
-{{% /comment %}}
+-->
 
 {{< client-and-work-section
+    sectionId="portfolio"
     title="A selection of my work" >}} 
 
-{{% comment %}}
+<!--
 {{< testimonial-section
     title="What they say about me" >}}
-{{% /comment %}}
+-->
 
 {{< spacer size="small" >}}
 
