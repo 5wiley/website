@@ -49,3 +49,7 @@
 .showcase-section h3 {
   font-weight: normal;
 }
+
+#portfolio {
+  scroll-margin-top: 100px;
+}

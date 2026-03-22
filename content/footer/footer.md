@@ -5,6 +5,7 @@ draft = false
 +++
 
 
+<!--
 {{< contact-section
     title="Reach out" 
     contact_form_name="Your name"
@@ -22,7 +23,9 @@ draft = false
     form_method="POST"
     contact_form_rows="3"
 >}}
+-->
 
+<!--
 {{< newsletter-section 
     newsletter_title="Stay updated"
     newsletter_placeholder="Enter your email"
@@ -33,6 +36,7 @@ draft = false
     form_action="/"
     form_method="POST"
 >}}
+-->
 
 
 {{< text-section
