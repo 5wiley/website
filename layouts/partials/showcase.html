@@ -96,13 +96,13 @@
     {{ end }}
 
     <div class="showcase-section row flex-md-row rad-fade-down rad-waiting rad-animate">
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <h1 class="display-1">
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h2>
           {{ $showcaseTitle }}
-        </h1>
-        <h2 class="display-5">
-          <span>{{ $showcaseSubtitle | safeHTML }}</span>
         </h2>
+        <h3>
+          <span>{{ $showcaseSubtitle | safeHTML }}</span>
+        </h3>
         <div class="lead">
           {{ $showcaseDescription }}
         </div>
@@ -116,7 +116,7 @@
         </a>
         {{ end }}
       </div>
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 profile-image{{ if $imgShape }} profile-image--{{ $imgShape }}{{ end }}">
+      <div class="col-12 col-md-7 pl-md-0 text-right profile-image{{ if $imgShape }} profile-image--{{ $imgShape }}{{ end }}">
         {{ if $youtubeId }}
         <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ $youtubeId }}" allowfullscreen></iframe>
