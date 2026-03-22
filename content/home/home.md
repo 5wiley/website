@@ -5,7 +5,7 @@ draft = false
 +++
 
 
-{{< showcase-from-content path="projects/swiss-fintech.md" title="Showcase" >}}
+{{< showcase-from-content path="projects/robo-advisor.md" title="Showcase" >}}
 
 {{< platform-links >}}
     <!-- {{< link icon="square-facebook" url="https://facebook.com/yourpage" >}} -->

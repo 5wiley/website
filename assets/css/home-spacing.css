@@ -1,0 +1,67 @@
+/*
+  Custom spacing for the homepage.
+  To use this file, you need to include it in your site's build.
+  If you are using the adritian theme, you can add this file to your `hugo.toml`
+  under the `[[params.plugins.css]]` section:
+
+  [[params.plugins.css]]
+    URL = "css/home-spacing.css"
+*/
+
+/* Default spacing for all sections on the homepage */
+body.home .section {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+/* Spacing for the showcase section */
+body.home #showcase {
+    padding-top: 6rem;
+    padding-bottom: 0rem;
+    min-height: auto;
+}
+
+@media (max-width: 967.98px) {
+    body.home #showcase {
+        padding-top: 100px;
+    }
+}
+
+/* Spacing for the platform links inside the showcase */
+body.home #showcase .platform-links {
+    margin-top: 2rem;
+}
+
+/* Spacing for the about section */
+body.home #about {
+    padding-top: 0rem;
+    padding-bottom: 4rem;
+}
+
+/* Spacing for the portfolio (client-and-work) section */
+body.home #portfolio {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* Spacing for spacer shortcodes */
+body.home .spacer.pt-3 { /* small */
+    padding-top: 1.5rem !important;
+}
+body.home .spacer.pt-5 { /* medium */
+    padding-top: 3rem !important;
+}
+body.home .spacer.pt-5.mt-4 { /* large */
+    padding-top: 4rem !important;
+    margin-top: 0 !important;
+}
+body.home .spacer.pt-5.mt-5 { /* xlarge */
+    padding-top: 5rem !important;
+    margin-top: 0 !important;
+}
+
+
+/* Resetting negative margins that pull sections together */
+body.home .rad-showcase + .section {
+    margin-top: 0;
+}
