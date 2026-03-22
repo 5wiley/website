@@ -1,0 +1,30 @@
+{{ $path := .Get "path" }}
+{{ $sectionId := .Get "sectionId" }} {{/* Get sectionId from shortcode context */}}
+{{ $page := site.GetPage $path }}
+{{ if $page }}
+  {{ $shortcodeTitle := .Get "title" }}
+  {{ $showcaseTitle := $shortcodeTitle | default $page.Title }}
+  {{ $showcaseSubtitle := .Get "subtitle" | default $page.Title }} {{/* Also allow subtitle override, default to page title */}}
+  {{ $showcaseDescription := $page.Content }}
+  {{ $buttonURL := $page.Params.button.URL }}
+  {{ $buttonIcon := $page.Params.button.icon }}
+  {{ $buttonText := $page.Params.button.btnText }}
+  {{ $imgSrc := $page.Params.image.src }}
+  {{ $imgScale := $page.Params.image.scale }}
+
+  {{ partial "showcase.html" (dict
+    "sectionId" $sectionId
+    "title" $showcaseTitle
+    "subtitle" $showcaseSubtitle
+    "description" $showcaseDescription
+    "button_url" $buttonURL
+    "button_icon" $buttonIcon
+    "button_text" $buttonText
+    "imgSrc" $imgSrc
+    "imgScale" $imgScale
+    "Inner" $.Inner
+    )
+  }}
+{{ else }}
+  {{ errorf "showcase-from-content: Page not found at path %s" $path }}
+{{ end }}

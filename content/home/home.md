@@ -5,13 +5,7 @@ draft = false
 +++
 
 
-{{< showcase-section
-    title="Showcase"
-    subtitle="<a href='/client-work/asgardia/'><code>Asgardia</code></a>"
-    description="<strong>Strong</strong>, <em>italic</em> and normal text. This comes from <a href='https://github.com/zetxek/adritian-demo/blob/main/content/home/home.md?plain=1'><code>home.md</code></a>, using the <code>showcase-section</code> <a href=''>shortcode</a>.<br/>Below you can see the social links, provided by the <code>platform-links</code> shortcode."
-    imgSrc="images/showcase/showcase.png"
-    imgScale="0.5"
- >}}
+{{< showcase-from-content path="projects/swiss-fintech.md" title="Showcase" >}}
 
 {{< platform-links >}}
     <!-- {{< link icon="square-facebook" url="https://facebook.com/yourpage" >}} -->
@@ -36,7 +30,7 @@ draft = false
 
 {{< /platform-links >}}
 
-{{< /showcase-section >}}
+{{< /showcase-from-content >}}
 
 {{< about-section
     title="About me"
