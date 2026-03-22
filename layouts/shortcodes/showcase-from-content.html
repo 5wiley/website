@@ -11,6 +11,7 @@
   {{ $buttonText := $page.Params.button.btnText }}
   {{ $imgSrc := $page.Params.image.src }}
   {{ $imgScale := $page.Params.image.scale }}
+  {{ $youtubeId := $page.Params.youtube_id }}
 
   {{ partial "showcase.html" (dict
     "sectionId" $sectionId
@@ -22,6 +23,7 @@
     "button_text" $buttonText
     "imgSrc" $imgSrc
     "imgScale" $imgScale
+    "youtubeId" $youtubeId
     "Inner" $.Inner
     )
   }}

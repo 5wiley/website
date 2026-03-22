@@ -13,6 +13,7 @@ params:
     image:
         src: "images/works/swissfintech.jpg"
         scale: 0.5
+    youtube_id: "uXctb9WJ_M8"
     
 
 ## The content is used for the description of the project

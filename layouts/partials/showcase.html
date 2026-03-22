@@ -47,6 +47,7 @@
     {{- $imgScale := 0.5 -}}
     {{- $imgShape := "" -}}
     {{- $socialLinks := "" -}}
+    {{- $youtubeId := "" -}}
 
     {{- if $isMap }}
       {{/* Context is a map (dict), so retrieve directly */}}
@@ -62,6 +63,7 @@
       {{- $imgScale = .imgScale | default hugo.Data.homepage.showcase.image.scale -}}
       {{- $imgShape = .imgShape | default hugo.Data.homepage.showcase.image.shape -}}
       {{- $socialLinks = .social_links -}}
+      {{- $youtubeId = .youtubeId -}}
     {{- else if $isShortcode }}
       {{/* Shortcode params */}}
       {{- $showcaseTitle = .Get "title" | default ( i18n "showcase_title" ) -}}
@@ -76,6 +78,7 @@
       {{- $imgScale = .Get "imgScale" | default hugo.Data.homepage.showcase.image.scale -}}
       {{- $imgShape = .Get "imgShape" | default hugo.Data.homepage.showcase.image.shape -}}
       {{- $socialLinks = .Get "social_links" -}}
+      {{- $youtubeId = .Get "youtubeId" -}}
     {{ else }}
       {{/* Fallback site or i18n */}}
       {{- $showcaseTitle = i18n "showcase_title" -}}
@@ -114,7 +117,13 @@
         {{ end }}
       </div>
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 profile-image{{ if $imgShape }} profile-image--{{ $imgShape }}{{ end }}">
-        {{ partial "lazypicture" (dict "src" $imgSrc "width" $imgWidth "height" $imgHeight "scale" $imgScale)}}
+        {{ if $youtubeId }}
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ $youtubeId }}" allowfullscreen></iframe>
+        </div>
+        {{ else }}
+            {{ partial "lazypicture" (dict "src" $imgSrc "width" $imgWidth "height" $imgHeight "scale" $imgScale)}}
+        {{ end }}
 
 <!-- future "right text -->
 

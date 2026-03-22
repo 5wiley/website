@@ -13,6 +13,7 @@ params:
     image:
         src: "images/works/robo-advisor.jpg"
         scale: 0.5
+    youtube_id: "dQw4w9WgXcQ"
     
 
 ## The content is used for the description of the project
