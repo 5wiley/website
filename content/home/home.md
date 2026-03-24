@@ -35,7 +35,7 @@ draft = false
 {{< about-section
     title="About me"
     content="Tom Wiley Cotton is ..."
-    imgSrc="images/about/user-picture.png"
+    imgSrc="images/about/twc-about-me-1.png"
     imgScale="0.5"
     text_align="center"
  >}}
