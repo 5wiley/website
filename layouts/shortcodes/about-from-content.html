@@ -1,0 +1,35 @@
+{{ $path := .Get "path" }}
+{{ $page := site.GetPage $path }}
+{{ if $page }}
+  {{- $title := $page.Title -}}
+  {{- $content := $page.Content -}}
+  {{- $imgSrc := $page.Params.imgSrc -}}
+  {{- $imgWidth := $page.Params.imgWidth -}}
+  {{- $imgHeight := $page.Params.imgHeight -}}
+  {{- $imgScale := $page.Params.imgScale -}}
+  {{- $vAlign := $page.Params.v_align | default ($page.Params.text_align) | default "center" -}}
+  {{- $hAlign := $page.Params.h_align | default "left" -}}
+  {{- $btnURL := $page.Params.button_url -}}
+  {{- $btnIcon := $page.Params.button_icon -}}
+  {{- $btnText := $page.Params.button_text -}}
+  {{- $sectionId := .Get "sectionId" | default "about" -}}
+  {{- $headingLevel := .Get "headingLevel" | default "2" -}}
+
+  {{ partial "about.html" (dict 
+      "title" $title 
+      "content" $content 
+      "imgSrc" $imgSrc 
+      "imgWidth" $imgWidth 
+      "imgHeight" $imgHeight 
+      "imgScale" $imgScale 
+      "vAlign" $vAlign 
+      "hAlign" $hAlign 
+      "btnURL" $btnURL 
+      "btnIcon" $btnIcon 
+      "btnText" $btnText 
+      "sectionId" $sectionId 
+      "headingLevel" $headingLevel 
+  ) }}
+{{ else }}
+  {{ errorf "about-from-content: Page not found at path %s" $path }}
+{{ end }}

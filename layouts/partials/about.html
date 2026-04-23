@@ -1,0 +1,29 @@
+{{/*
+  This partial is a "renderer" for the about section.
+  It expects all variables to be passed in its context.
+*/}}
+
+{{ $sectionId := .sectionId | default "about" }}
+{{ $headingLevel := .headingLevel | default "2" }}
+
+<section {{if $sectionId}} id="{{ $sectionId }}"{{end}} class="section rad-animation-group pb-0">
+  <div class="rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+      <div class="about__profile-picture col-12 col-md-6">
+        {{ partial "lazypicture" (dict "src" .imgSrc "width" .imgWidth "height" .imgHeight "scale" .imgScale "class" "image-left-overflow")}}
+      </div>
+      <div class="col-12 col-md-6{{ if eq .vAlign "center" }} my-auto{{ else if eq .vAlign "top" }} align-self-start{{ else if eq .vAlign "bottom" }} align-self-end{{ end }}{{ if eq .hAlign "center" }} text-center{{ else if eq .hAlign "right" }} text-end{{ end }}">
+        <h{{ $headingLevel }}>{{ .title }}</h{{ $headingLevel }}>
+        <div class="about-me content">
+          {{ .content }}
+        </div>
+        {{ if .btnText }}
+          <a href="{{ .btnURL | absURL }}" target="_blank" class="btn btn-primary mt-3">
+            <i class="{{ .btnIcon }}"></i>
+            {{ .btnText }}
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

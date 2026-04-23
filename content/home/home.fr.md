@@ -37,17 +37,7 @@ draft = false
 {{< /platform-links >}}
 {{< /showcase-section >}}
 
-{{< about-section
-    title="À propos de moi"
-    content="En utilisant la <code>syntaxe HTML</code>"
-    about_button="Texte du bouton"
-    button_icon="info"
-    button_text="Vous pouvez modifier ceci"
-    button_url="https://www.google.com"
-    imgSrc="images/about/user-picture.png"
-    imgScale="0.5"
-    sectionId="a-propos"
->}}
+{{< about-from-content path="about.fr.md" sectionId="a-propos" >}}
 
 {{< education-list
     title="Formation académique"

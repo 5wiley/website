@@ -10,7 +10,7 @@ draft = false
 {{< platform-links >}}
     <!-- {{< link icon="square-facebook" url="https://facebook.com/yourpage" >}} -->
     <!-- {{< link icon="square-twitter" url="https://twitter.com/yourpage" >}} -->
-    {{< link icon="linkedin" url="www.linkedin.com/in/tom-wiley-cotton-7345ab387" >}}
+    {{< link icon="linkedin" url="https://linkedin.com/in/tom-wiley-cotton">}}
     {{< link icon="square-github" url="https://github.com/5wiley" >}}
     <!-- {{< link icon="x-twitter" url="https://twitter.com/zetxek" >}} -->
     <!-- {{< link icon="dribbble" url="#" >}} -->
@@ -32,13 +32,7 @@ draft = false
 
 {{< /showcase-from-content >}}
 
-{{< about-section
-    title="About me"
-    content="Tom Wiley Cotton is ..."
-    imgSrc="images/about/twc-about-me-1.png"
-    imgScale="0.5"
-    text_align="center"
- >}}
+{{< about-from-content path="about.md" >}}
 
 <!--
 {{< education-list
